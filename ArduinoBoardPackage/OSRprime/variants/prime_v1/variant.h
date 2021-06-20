@@ -221,6 +221,12 @@ static const uint8_t SDA = PIN_WIRE_SDA;
 static const uint8_t SCL = PIN_WIRE_SCL;
 
 /*
+ * CAN
+ */
+
+// TODO
+
+/*
  * USB
  */
 // #define PIN_USB_HOST_ENABLE (24ul)
