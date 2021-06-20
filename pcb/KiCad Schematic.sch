@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A2 23386 16535
 encoding utf-8
-Sheet 1 4
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -158,29 +158,18 @@ $EndComp
 $Comp
 L power:GND #PWR0103
 U 1 1 5F5F3F7E
-P 19900 13200
-F 0 "#PWR0103" H 19900 12950 50  0001 C CNN
-F 1 "GND" H 19905 13027 50  0000 C CNN
-F 2 "" H 19900 13200 50  0001 C CNN
-F 3 "" H 19900 13200 50  0001 C CNN
-	1    19900 13200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F5F3F84
-P 20200 13100
-F 0 "J2" H 20280 13092 50  0000 L CNN
-F 1 "Conn_01x02" H 20280 13001 50  0000 L CNN
-F 2 "Connector_BarrelJack:BarrelJack_Wuerth_6941xx301002" H 20200 13100 50  0001 C CNN
-F 3 "~" H 20200 13100 50  0001 C CNN
-	1    20200 13100
+P 19700 13200
+F 0 "#PWR0103" H 19700 12950 50  0001 C CNN
+F 1 "GND" H 19705 13027 50  0000 C CNN
+F 2 "" H 19700 13200 50  0001 C CNN
+F 3 "" H 19700 13200 50  0001 C CNN
+	1    19700 13200
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	19900 13100 20000 13100
+	19700 13100 19800 13100
 Wire Wire Line
-	20000 13200 19900 13200
+	19800 13200 19700 13200
 Text Label 2550 1200 1    50   ~ 0
 SWCLK
 Text Label 2450 1200 1    50   ~ 0
@@ -770,12 +759,12 @@ $EndComp
 $Comp
 L power:+VDC #PWR0147
 U 1 1 5F771B0A
-P 19900 13100
-F 0 "#PWR0147" H 19900 13000 50  0001 C CNN
-F 1 "+VDC" H 19900 13375 50  0000 C CNN
-F 2 "" H 19900 13100 50  0001 C CNN
-F 3 "" H 19900 13100 50  0001 C CNN
-	1    19900 13100
+P 19700 13100
+F 0 "#PWR0147" H 19700 13000 50  0001 C CNN
+F 1 "+VDC" H 19700 13375 50  0000 C CNN
+F 2 "" H 19700 13100 50  0001 C CNN
+F 3 "" H 19700 13100 50  0001 C CNN
+	1    19700 13100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -810,18 +799,12 @@ Wire Wire Line
 	5350 1800 5550 1800
 Wire Wire Line
 	5550 2000 5450 2000
-Text Label 2050 4600 3    50   ~ 0
-D2_STEP
-Text Label 1950 4600 3    50   ~ 0
-D2_DIR
-Text Label 2350 4600 3    50   ~ 0
+Text Label 3800 2850 0    50   ~ 0
 D2_CS
 Wire Wire Line
 	1750 1200 1750 1350
 Text Label 1750 1200 1    50   ~ 0
 gnd
-Wire Wire Line
-	1300 2550 1450 2550
 Text Label 1300 2150 2    50   ~ 0
 OSC0
 Text Label 1300 2250 2    50   ~ 0
@@ -928,37 +911,15 @@ F 3 "" H 3350 6350 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3350 6250 3350 6350
-$Comp
-L Connector_Generic:Conn_01x02 J9
-U 1 1 5FA4739C
-P 22350 13950
-F 0 "J9" H 22430 13942 50  0000 L CNN
-F 1 "Conn_01x02" H 22430 13851 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 22350 13950 50  0001 C CNN
-F 3 "~" H 22350 13950 50  0001 C CNN
-	1    22350 13950
-	1    0    0    -1  
-$EndComp
-Text Label 22150 14050 2    50   ~ 0
+Text Label 20000 12200 2    50   ~ 0
 SCL
-Text Label 22150 13950 2    50   ~ 0
+Text Label 20000 12100 2    50   ~ 0
 SDA
-$Comp
-L Connector_Generic:Conn_01x03 J12
-U 1 1 5FAEA0C7
-P 21350 13950
-F 0 "J12" H 21430 13992 50  0000 L CNN
-F 1 "Conn_01x03" H 21430 13901 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 21350 13950 50  0001 C CNN
-F 3 "~" H 21350 13950 50  0001 C CNN
-	1    21350 13950
-	1    0    0    -1  
-$EndComp
-Text Label 21150 13950 2    50   ~ 0
+Text Label 20000 11900 2    50   ~ 0
 MOSI
-Text Label 21150 13850 2    50   ~ 0
+Text Label 20000 11800 2    50   ~ 0
 MISO
-Text Label 21150 14050 2    50   ~ 0
+Text Label 20000 12000 2    50   ~ 0
 SCK
 $Comp
 L Connector_Generic:Conn_01x03 J16
@@ -1050,20 +1011,9 @@ Wire Wire Line
 	3150 4450 3150 4600
 Wire Wire Line
 	3250 4600 3250 4450
-$Comp
-L Connector_Generic:Conn_01x02 J21
-U 1 1 601C793B
-P 22350 14250
-F 0 "J21" H 22430 14242 50  0000 L CNN
-F 1 "Conn_01x02" H 22430 14151 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 22350 14250 50  0001 C CNN
-F 3 "~" H 22350 14250 50  0001 C CNN
-	1    22350 14250
-	1    0    0    -1  
-$EndComp
-Text Label 22150 14350 2    50   ~ 0
+Text Label 20000 12400 2    50   ~ 0
 RX
-Text Label 22150 14250 2    50   ~ 0
+Text Label 20000 12300 2    50   ~ 0
 TX
 $Comp
 L Device:C C31
@@ -1076,36 +1026,6 @@ F 3 "~" H 21100 5500 50  0001 C CNN
 	1    21100 5500
 	1    0    0    -1  
 $EndComp
-Text Label 1300 2950 2    50   ~ 0
-GEN2
-Text Label 1300 3050 2    50   ~ 0
-GEN3
-Text Label 1300 3150 2    50   ~ 0
-GEN4
-Text Label 1300 3250 2    50   ~ 0
-GEN5
-Text Label 1300 3350 2    50   ~ 0
-GEN6
-Text Label 1300 3450 2    50   ~ 0
-GEN7
-Text Label 1300 3550 2    50   ~ 0
-GEN8
-Text Label 1300 3650 2    50   ~ 0
-GEN9
-Wire Wire Line
-	1300 3050 1450 3050
-Wire Wire Line
-	1450 3150 1300 3150
-Wire Wire Line
-	1450 3250 1300 3250
-Wire Wire Line
-	1300 3350 1450 3350
-Wire Wire Line
-	1450 3450 1300 3450
-Wire Wire Line
-	1450 3550 1300 3550
-Wire Wire Line
-	1300 3650 1450 3650
 Wire Wire Line
 	1750 4450 1750 4600
 Wire Wire Line
@@ -1113,29 +1033,11 @@ Wire Wire Line
 Wire Wire Line
 	1950 4450 1950 4600
 Wire Wire Line
-	1300 2950 1450 2950
-Text Label 20000 11900 2    50   ~ 0
-GEN2
-Text Label 20000 12000 2    50   ~ 0
-GEN3
-Text Label 20000 12100 2    50   ~ 0
-GEN4
-Text Label 20000 12200 2    50   ~ 0
-GEN5
-Text Label 20000 12300 2    50   ~ 0
-GEN6
-Wire Wire Line
 	2350 4450 2350 4600
 Wire Wire Line
 	2450 4600 2450 4450
 Wire Wire Line
 	2050 4450 2050 4600
-Text Label 20000 12400 2    50   ~ 0
-GEN7
-Text Label 20000 12500 2    50   ~ 0
-GEN8
-Text Label 20000 12600 2    50   ~ 0
-GEN9
 $Comp
 L SamacSys_Parts:KMR243GLFG S1
 U 1 1 60544041
@@ -1160,7 +1062,7 @@ L Device:R R16
 U 1 1 5F756ADE
 P 3400 7450
 F 0 "R16" H 3470 7496 50  0000 L CNN
-F 1 "10k" H 3470 7405 50  0000 L CNN
+F 1 "2k2" H 3470 7405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3330 7450 50  0001 C CNN
 F 3 "~" H 3400 7450 50  0001 C CNN
 	1    3400 7450
@@ -1190,7 +1092,7 @@ L Device:R R18
 U 1 1 5F78BD45
 P 4000 7450
 F 0 "R18" H 4070 7496 50  0000 L CNN
-F 1 "10k" H 4070 7405 50  0000 L CNN
+F 1 "2k2" H 4070 7405 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 3930 7450 50  0001 C CNN
 F 3 "~" H 4000 7450 50  0001 C CNN
 	1    4000 7450
@@ -1213,16 +1115,6 @@ Wire Wire Line
 	3900 7700 4000 7700
 Wire Wire Line
 	4000 7700 4000 7600
-Wire Wire Line
-	1300 2650 1450 2650
-Text Label 1300 2550 2    50   ~ 0
-GEN0
-Text Label 1300 2650 2    50   ~ 0
-GEN1
-Text Label 20000 11700 2    50   ~ 0
-GEN0
-Text Label 20000 11800 2    50   ~ 0
-GEN1
 Wire Notes Line
 	18650 9550 22900 9550
 Text Notes 18700 9800 0    157  ~ 0
@@ -1362,8 +1254,6 @@ Wire Wire Line
 	19700 1100 19600 1100
 Wire Wire Line
 	19600 1100 19600 1250
-Text Label 20500 1100 0    50   ~ 0
-GEN14
 $Comp
 L Connector_Generic:Conn_01x06 J22
 U 1 1 5F8A3126
@@ -1678,15 +1568,15 @@ Wire Wire Line
 	3800 2650 3650 2650
 Wire Wire Line
 	3650 2550 3800 2550
-Text Label 2850 4600 3    50   ~ 0
-D1_CS
-Text Label 3800 3250 0    50   ~ 0
-D0_EN
-Text Label 3800 2750 0    50   ~ 0
-D0_DIR
-Text Label 3800 2850 0    50   ~ 0
-D0_STEP
 Text Label 3250 4600 3    50   ~ 0
+D1_CS
+Text Label 2050 1350 1    50   ~ 0
+D0_EN
+Text Label 2350 1350 1    50   ~ 0
+D0_DIR
+Text Label 2250 1350 1    50   ~ 0
+D0_STEP
+Text Label 2850 4600 3    50   ~ 0
 D1_DIR
 Text Label 3150 4600 3    50   ~ 0
 D1_STEP
@@ -1765,36 +1655,25 @@ Wire Wire Line
 	1100 5850 1450 5850
 Connection ~ 1450 5850
 Text Notes 4600 4300 0    157  ~ 0
-STEPPER 0
+STEPPERS
 Wire Notes Line
 	4450 10100 4450 500 
 Wire Notes Line
 	4450 4000 11700 4000
-Text Label 3800 3150 0    50   ~ 0
+Text Label 2150 1350 1    50   ~ 0
 D0_CS
-Text Label 2750 4600 3    50   ~ 0
+Text Label 3800 3450 0    50   ~ 0
 D1_EN
-Text Label 2450 4600 3    50   ~ 0
+Text Label 3800 2750 0    50   ~ 0
 D2_EN
 Text Label 3800 2650 0    50   ~ 0
 CAN_TX
 Text Label 3800 2550 0    50   ~ 0
 CAN_RX
-Text Label 21150 14300 2    50   ~ 0
+Text Label 20000 12500 2    50   ~ 0
 CAN_TX
-Text Label 21150 14400 2    50   ~ 0
+Text Label 20000 12600 2    50   ~ 0
 CAN_RX
-$Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 65075414
-P 21350 14300
-F 0 "J8" H 21430 14292 50  0000 L CNN
-F 1 "Conn_01x02" H 21430 14201 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 21350 14300 50  0001 C CNN
-F 3 "~" H 21350 14300 50  0001 C CNN
-	1    21350 14300
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	7300 500  7300 4000
 Wire Notes Line
@@ -1939,4 +1818,256 @@ F6 "EN" I R 5900 6900 50
 F7 "STEP" I R 5900 7000 50 
 F8 "DIR" I R 5900 7100 50 
 $EndSheet
+$Sheet
+S 7000 4700 900  750 
+U 60B644A9
+F0 "2014Driver" 50
+F1 "2041Driver.sch" 50
+F2 "EN" I R 7900 4800 50 
+F3 "STEP1" I R 7900 4900 50 
+F4 "DIR1" I R 7900 5000 50 
+F5 "STEP2" I R 7900 5100 50 
+F6 "DIR2" I R 7900 5200 50 
+F7 "CS" I L 7000 4950 50 
+F8 "SCK" I L 7000 5250 50 
+F9 "MOSI" I L 7000 5150 50 
+F10 "MISO" O L 7000 5050 50 
+$EndSheet
+$Sheet
+S 7000 5750 900  750 
+U 60C9AE58
+F0 "sheet60C9AE4D" 50
+F1 "2041Driver.sch" 50
+F2 "EN" I R 7900 5850 50 
+F3 "STEP1" I R 7900 5950 50 
+F4 "DIR1" I R 7900 6050 50 
+F5 "STEP2" I R 7900 6150 50 
+F6 "DIR2" I R 7900 6250 50 
+F7 "CS" I L 7000 6000 50 
+F8 "SCK" I L 7000 6300 50 
+F9 "MOSI" I L 7000 6200 50 
+F10 "MISO" O L 7000 6100 50 
+$EndSheet
+Text Label 8000 4800 0    50   ~ 0
+D3D4_EN
+Text Label 8000 5000 0    50   ~ 0
+D3_DIR
+Text Label 8000 4900 0    50   ~ 0
+D3_STEP
+Text Label 8000 5200 0    50   ~ 0
+D4_DIR
+Text Label 8000 5100 0    50   ~ 0
+D4_STEP
+Text Label 8000 5850 0    50   ~ 0
+D5D6_EN
+Text Label 8000 6050 0    50   ~ 0
+D5_DIR
+Text Label 8000 5950 0    50   ~ 0
+D5_STEP
+Text Label 8000 6250 0    50   ~ 0
+D6_DIR
+Text Label 8000 6150 0    50   ~ 0
+D6_STEP
+Text Label 6900 4950 2    50   ~ 0
+D3D4_CS
+Text Label 6900 5150 2    50   ~ 0
+MOSI
+Text Label 6900 5050 2    50   ~ 0
+MISO
+Text Label 6900 5250 2    50   ~ 0
+SCK
+Wire Wire Line
+	6900 4950 7000 4950
+Wire Wire Line
+	7000 5050 6900 5050
+Wire Wire Line
+	6900 5150 7000 5150
+Wire Wire Line
+	7000 5250 6900 5250
+Text Label 6900 6000 2    50   ~ 0
+D5D6_CS
+Text Label 6900 6200 2    50   ~ 0
+MOSI
+Text Label 6900 6100 2    50   ~ 0
+MISO
+Text Label 6900 6300 2    50   ~ 0
+SCK
+Wire Wire Line
+	6900 6000 7000 6000
+Wire Wire Line
+	7000 6100 6900 6100
+Wire Wire Line
+	6900 6200 7000 6200
+Wire Wire Line
+	7000 6300 6900 6300
+Wire Wire Line
+	7900 4900 8000 4900
+Wire Wire Line
+	8000 5000 7900 5000
+Wire Wire Line
+	7900 4800 8000 4800
+Wire Wire Line
+	7900 5200 8000 5200
+Wire Wire Line
+	7900 5100 8000 5100
+Wire Wire Line
+	7900 5950 8000 5950
+Wire Wire Line
+	8000 6050 7900 6050
+Wire Wire Line
+	7900 5850 8000 5850
+Wire Wire Line
+	7900 6250 8000 6250
+Wire Wire Line
+	7900 6150 8000 6150
+Text Label 3800 3250 0    50   ~ 0
+D2_DIR
+Text Label 3800 3150 0    50   ~ 0
+D2_STEP
+Text Label 2050 4600 3    50   ~ 0
+D3D4_EN
+Text Label 2450 4600 3    50   ~ 0
+D3_DIR
+Text Label 2350 4600 3    50   ~ 0
+D3_STEP
+Text Label 2650 4600 3    50   ~ 0
+D4_DIR
+Text Label 2550 4600 3    50   ~ 0
+D4_STEP
+Text Label 1300 3250 2    50   ~ 0
+D5D6_EN
+Text Label 1300 3450 2    50   ~ 0
+D5_DIR
+Text Label 1300 3350 2    50   ~ 0
+D5_STEP
+Text Label 1300 3650 2    50   ~ 0
+D6_DIR
+Text Label 1300 3550 2    50   ~ 0
+D6_STEP
+Text Label 1950 4600 3    50   ~ 0
+D3D4_CS
+Text Label 2750 4600 3    50   ~ 0
+D5D6_CS
+Wire Wire Line
+	2650 4450 2650 4600
+Wire Wire Line
+	2550 4450 2550 4600
+Wire Wire Line
+	1300 3650 1450 3650
+Wire Wire Line
+	1450 3550 1300 3550
+Wire Wire Line
+	1300 3450 1450 3450
+Wire Wire Line
+	1450 3350 1300 3350
+Wire Wire Line
+	1450 3250 1300 3250
+$Comp
+L Connector_Generic:Conn_01x05 J8
+U 1 1 61237115
+P 21950 14000
+F 0 "J8" H 22030 14042 50  0000 L CNN
+F 1 "Conn_01x05" H 22030 13951 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical" H 21950 14000 50  0001 C CNN
+F 3 "~" H 21950 14000 50  0001 C CNN
+	1    21950 14000
+	1    0    0    -1  
+$EndComp
+Text Label 21750 13800 2    50   ~ 0
+GPIO1
+Text Label 21750 13900 2    50   ~ 0
+GPIO2
+Text Label 21750 14000 2    50   ~ 0
+GPIO3
+Text Label 21750 14100 2    50   ~ 0
+GPIO4
+Text Label 21750 14200 2    50   ~ 0
+GPIO5
+Text Label 1300 2550 2    50   ~ 0
+GPIO1
+Text Label 1300 2650 2    50   ~ 0
+GPIO2
+Text Label 1300 2950 2    50   ~ 0
+GPIO3
+Text Label 1300 3050 2    50   ~ 0
+GPIO4
+Text Label 1300 3150 2    50   ~ 0
+GPIO5
+Wire Wire Line
+	1300 2950 1450 2950
+Wire Wire Line
+	1450 3050 1300 3050
+Wire Wire Line
+	1300 3150 1450 3150
+Wire Wire Line
+	1300 2550 1450 2550
+Wire Wire Line
+	1300 2650 1450 2650
+NoConn ~ 5550 2200
+NoConn ~ 6450 2200
+NoConn ~ 6450 2100
+NoConn ~ 6450 2000
+NoConn ~ 1850 1350
+NoConn ~ 1950 1350
+Text Label 20500 1100 0    50   ~ 0
+GPIO5
+$Comp
+L Connector_Generic:Conn_01x04 J9
+U 1 1 60BABCE1
+P 21950 11750
+F 0 "J9" H 22030 11742 50  0000 L CNN
+F 1 "Conn_01x04" H 22030 11651 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 21950 11750 50  0001 C CNN
+F 3 "~" H 21950 11750 50  0001 C CNN
+	1    21950 11750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0137
+U 1 1 60BAD1F8
+P 21400 11750
+F 0 "#PWR0137" H 21400 11500 50  0001 C CNN
+F 1 "GND" H 21405 11577 50  0000 C CNN
+F 2 "" H 21400 11750 50  0001 C CNN
+F 3 "" H 21400 11750 50  0001 C CNN
+	1    21400 11750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0139
+U 1 1 60BAD1FE
+P 21400 11650
+F 0 "#PWR0139" H 21400 11500 50  0001 C CNN
+F 1 "+5V" H 21415 11823 50  0000 C CNN
+F 2 "" H 21400 11650 50  0001 C CNN
+F 3 "" H 21400 11650 50  0001 C CNN
+	1    21400 11650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	21400 11650 21750 11650
+Wire Wire Line
+	21400 11750 21750 11750
+Text Label 21750 11950 2    50   ~ 0
+SCL
+Text Label 21750 11850 2    50   ~ 0
+SDA
+NoConn ~ 20000 11700
+$Comp
+L SamacSys_Parts:691313710002 J2
+U 1 1 60C22F6A
+P 19800 13100
+F 0 "J2" H 20428 13096 50  0000 L CNN
+F 1 "691313710002" H 20428 13005 50  0000 L CNN
+F 2 "691313710002" H 20450 13200 50  0001 L CNN
+F 3 "http://katalog.we-online.de/em/datasheet/6913137100xx.pdf" H 20450 13100 50  0001 L CNN
+F 4 "WR-TBL Terminal block - serie 3137" H 20450 13000 50  0001 L CNN "Description"
+F 5 "8" H 20450 12900 50  0001 L CNN "Height"
+F 6 "710-691313710002" H 20450 12800 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Wurth-Elektronik/691313710002?qs=E2PpAYvlWVvKmc%252BmbMMj0Q%3D%3D" H 20450 12700 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Wurth Elektronik" H 20450 12600 50  0001 L CNN "Manufacturer_Name"
+F 9 "691313710002" H 20450 12500 50  0001 L CNN "Manufacturer_Part_Number"
+	1    19800 13100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

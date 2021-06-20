@@ -1,0 +1,60 @@
+{
+  "packages":
+  [
+    {
+      "name": "osr_prime",
+      "maintainer": "Andrew DeGonge - 3DprintedLife",
+      "websiteURL": "https://github.com/DDeGonge/OSR-Prime-Control-Board",
+      "email" : "3dprintedlife@gmail.com",
+      "platforms":
+      [
+        {
+          "name": "OSR Prime",
+          "architecture": "samd",
+          "version": "1.0.0",
+          "category": "Contributed",
+          "url": "https://github.com/DDeGonge/OSR-Prime-Control-Board/raw/master/ArduinoBoardPackage/OSRprime-1.0.0.zip",
+          "archiveFileName": "OSRprime-1.0.0.zip",
+          "checksum": "MD5:4658fed3a41f732449ce86e6d2ba3742",
+          "size": "1612794",
+          "boards": [
+            {
+              "name": "prime_v1"
+            }
+          ],
+          "toolsDependencies":
+          [
+            {
+              "packager": "arduino",
+              "name": "arm-none-eabi-gcc",
+              "version": "7-2017q4"
+            },
+            {
+              "packager": "arduino",
+              "name": "bossac",
+              "version": "1.8.0-48-gb176eee"
+            },
+            {
+              "packager": "arduino",
+              "name": "openocd",
+              "version": "0.10.0-arduino9"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS",
+              "version": "4.5.0"
+            },
+            {
+              "packager": "arduino",
+              "name": "CMSIS-Atmel",
+              "version": "1.2.0"
+            }
+          ]
+        }
+      ],
+      "tools":
+      [
+      ]
+    }
+  ]
+}
