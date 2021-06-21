@@ -20,7 +20,7 @@
 # 
 
 name=OSR Prime Boards
-version=1.0.12
+version=1.0.1
 
 # Compile variables
 # -----------------

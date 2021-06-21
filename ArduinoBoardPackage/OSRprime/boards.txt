@@ -23,7 +23,7 @@ menu.debug=Debug
 
 # PRIME V1 (SAMD51)
 # ------------------------------
-prime_v1.name=OSR V2 (SAMD51)
+prime_v1.name=OSR Prime V1 (SAMD51)
 prime_v1.vid.0=0x239A
 prime_v1.pid.0=0x8022
 prime_v1.vid.1=0x239A
@@ -37,8 +37,8 @@ prime_v1.upload.wait_for_upload_port=true
 prime_v1.upload.native_usb=true
 prime_v1.build.mcu=cortex-m4
 #prime_v1.build.f_cpu=120000000L
-prime_v1.build.usb_product="Adafruit Feather M4"
-prime_v1.build.usb_manufacturer="Adafruit LLC"
+prime_v1.build.usb_product="OSR Prime V1"
+prime_v1.build.usb_manufacturer="3DprintedLife"
 prime_v1.build.board=PRIME_V1
 prime_v1.build.core=arduino
 prime_v1.build.extra_flags=-D__SAMD51J19A__ -DADAFRUIT_FEATHER_M4_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -mfloat-abi=hard -mfpu=fpv4-sp-d16
